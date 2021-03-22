@@ -267,6 +267,9 @@ h2 {
   :root{
       font-size: 2vw;
   }
+  .section-box {
+    line-height: 1.7rem;
+  }
 }
 
 @media screen and (max-width: 577px) {
@@ -274,14 +277,19 @@ h2 {
       font-size: 3.2vw;
   }
 
-  header nav ul {
-    justify-content: space-between;
+ nav {
+    z-index: 9;
   }
 
-  header nav ul .button {
-    font-size: 1.3rem;
-    height: 2rem;
-    line-height: 1.7rem;
-    padding: 0 0.5rem;
+  .section-box {
+    line-height: 1.65rem;
+    width: auto;
+    margin: -2.05rem 0;
+    box-shadow: 0rem 0rem  0.5rem rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+
+  .a-paragraph {
+    padding: 0 0rem;
   }
 }
