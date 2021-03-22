@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+@font-face {
+  font-family: 'glyphworldmountain';
+  src: url('fonts/glyphworld-mountain-webfont.woff2') format('woff2'),
+       url('fonts/glyphworld-mountain-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --purple: rgb(137, 0, 255);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255,255);
+  font-size: 1.5vw;
+  line-height: 2.1em;
+  overflow-x: hidden ;
+}
+
+canvas {
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:-1;
+  bottom: 0;
+  position: fixed;
+  margin-left: -0.6rem;
+}
+
+body {
+  margin: 1rem;
+}
+
+/*
+main {
+  min-height: calc(100vh - 5rem);
+}
+*/ 
+
+/*------------------*
+      general  
+*------------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+.svg-tag {
+  width: 0.5rem;
+  margin-right: 0.2rem;
+}
+
+.author-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  margin: 0 0.2rem 0 0;
+  font-size: 0.7rem;
+  width: fit-content;
+  transition-duration: 0.3s;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+  font-family: 'glyphworldmountain';
+  font-weight: normal;
+  font-size: 0.71rem;
+  color: var(--purple);
+  width: fit-content;
+}
+
+/*------------------*
+        header  
+*------------------*/
+header {
+  margin:  1.5rem 0 4rem 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  right: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  position: fixed;
+}
+
+header nav ul .button {
+  border: 0.1rem solid var(--purple);
+  background-color: var(--white);
+  border-radius: 0.2rem;
+  height: 1.5rem;
+  line-height: 1.55rem;
+  padding: 0 0.3rem;
+  margin: 0 1.5rem 0 -1rem;
+  transition-duration: 0.3s;
+}
+
+header nav ul .button:hover {
+  text-decoration: underline;
+  background-color: var(--purple);
+  color: var(--white);
+  box-shadow: 0rem 0rem  0.2rem rgba(137, 0, 255, 0.3);
+}
+
+.button-cam:hover {
+  background-color: var(--purple);
+  box-shadow: 0rem 0rem  0.2rem rgba(137, 0, 255, 0.3);
+  cursor: pointer;
+}
+
+header nav ul .current-section {
+  box-shadow: 0rem 0rem  0.2rem rgba(137, 0, 255, 0.3);
+  text-decoration: underline;
+  color: var(--purple);
+  font-family: 'glyphworldmountain';
+  font-weight: normal;
+  line-height: 1.2em;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.svg-header {
+  width: 1.3rem;
+  transition: 0.3s;
+}
+
+video {
+  width: 10rem;
+  transition: 0.1s;
+  position: absolute;
+}
+
+.follow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+
+/*------------------*
+        text  
+*------------------*/
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  width: fit-content;
+  text-transform: uppercase;
+  color: var(--purple);
+  font-size: 1.7rem;
+  transition-duration: 0.3s;
+  display: flex;
+  cursor: default;
+}
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+}
+
+.section-box {
+  border: solid 0.15em var(--purple);
+  border-radius: 1rem;
+  padding: 1.1rem 1rem 0.6rem 0.9rem;
+  line-height: 1.2rem;
+  background-color: var(--white);
+  transition-duration: 0.3s;
+  width: fit-content;
+  margin: -2.05rem 0;
+  box-shadow: 0rem 0rem  0.5rem rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.section-box:hover {
+  margin: 0 0 0 2rem;
+}
+
+/*------------------*
+        tags  
+*------------------*/
+.container .tags {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+    margin: 0 0.2rem 0 0;
+    font-size: 0.6rem;
+    display: inline-block;
+    transition-duration: 0.3s;
+}
+
+.container .tags:hover {
+  color: var(--purple);
+  font-size: 0.609rem;
+  text-decoration: underline;
+  font-family: 'glyphworldmountain';
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------*
+      scroll  
+*------------------*/
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--purple); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple); 
+}
+
+/*------------------*
+    media queries  
+*------------------*/
+@media screen and (max-width: 1025px) {
+  :root {
+      font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  :root{
+      font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  :root{
+      font-size: 3.2vw;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  header nav ul .button {
+    font-size: 1.3rem;
+    height: 2rem;
+    line-height: 1.7rem;
+    padding: 0 0.5rem;
+  }
+}
