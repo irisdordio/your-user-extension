@@ -209,6 +209,33 @@ h2 {
 }
 
 /*------------------*
+        info  
+*------------------*/
+.a-paragraph {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 0.99em;
+  text-indent: 2rem;
+  padding: 0 6rem;
+}
+
+.text-margin {
+  margin-bottom: 0.4rem;
+}
+
+.link-video {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.link-video:hover {
+  font-family: 'glyphworldmountain';
+  font-size: 1.65rem;
+  color: var(--purple);
+  line-height: 1em;
+}
+/*------------------*
       scroll  
 *------------------*/
 ::-webkit-scrollbar {
